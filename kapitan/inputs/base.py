@@ -136,6 +136,7 @@ class CompilingFile(object):
                     indent=indent,
                     Dumper=PrettyDumper,
                     default_flow_style=False,
+                    sort_keys=False,
                 )
             else:
                 yaml.dump_all(
@@ -144,6 +145,7 @@ class CompilingFile(object):
                     indent=indent,
                     Dumper=PrettyDumper,
                     default_flow_style=False,
+                    sort_keys=False,
                 )
 
             logger.debug("Wrote %s", self.fp.name)
